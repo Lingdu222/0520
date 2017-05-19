@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+
+
+	// var className = "wuyanzu";
+
+	// var classList = ["wangxiaoteng","jingqianqian","xuecui"]
+
+	//数组就是存放一组数据来用的一种数据格式。 object的子集;
+
+	var arr = [1,2,3,4,5,6,7];//项;
+
+	//数组;
+
+	//index索引; 0开始;
+
+	// console.log(arr[0]);
+	// console.log(arr[1]);
+	// console.log(arr[2]);
+	// console.log(arr[3]);
+	// console.log(arr[4]);
+	// console.log(arr[5]);
+	// console.log(arr[6]);
+
+	//取出数组中所有的项的时候,for   遍历;
+
+
+	// var arr = [1,2,3,4,5,6,7];
+
+	// //arr.length => 代表当前数组的数量 ; 1 开始计数的;o
+
+	// //console.log(arr.length);
+
+	// for(var i = 0 ; i < arr.length; i++){
+
+	// 	console.log(arr[i]);
+
+	// }
+
+	//你不知道的事；
+
+	// var arr = [];
+
+	//var arr = new Array(1,2,3,4,5,6,67,7);
+
+	//var arr = new Array(100);
+
+	//Array() => 两种参数形式; 
+
+	//1.传一个参数的时候,代表的是length长度;
+
+	//2.传两个以上参数那么参数就作为数组的项;
+
+	//console.log(arr);
+
+
+	var arr = [];
+
+	//JSON;
+
+	//1.怎么弄出1~100的数字?
+
+	//JS提供给我们某种数据类型的操作方法;
+
+
+	// for(var i = 0 ; i < 100 ; i++){
+
+	// 	//console.log(i + 1);
+
+	// 	//arr.push(i + 1); 向后插入;
+
+	// 	//arr.pop();
+
+	// 	arr.unshift(i + 1);
+
+	// }
+
+
+
+	//console.log(arr[2]);
+
+
+	//arr[2] = "hello world！";
+
+	//arr.shift();//删除操作 >>> 从前往后删除;
+
+	//arr[3] = null;
+
+	//splice 删除数组之中，某几项的;
+
+	//数据类型方法 =>> 参数，返回值;
+
+	//第一个参数代表从哪位开始删除，第二个参数代表删除几位(如果不传的话，删除后面所有项);
+
+	// arr.splice(3,1)
+
+	// console.log(arr);
+
+	//数组的项可以是什么数据类型?  可以是任意数据类型;
+
+
+	//var arr = [1,"2",function(){alert(1)},{key:"value",fn:function(){alert(1)}},null,true]
+
+	//arr[3].fn()
+
+	//多维数组;
+
+	var arr = [1,2,[1,2,3],[1,2,3,[1,2,3,[1,2,3,4,[1,2,3,4]]]]];
+
+	console.log(arr[3][3]);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
