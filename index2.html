@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		
+		// var json = [1,2,3,4,5,6,7];
+
+		// var json2 = {key:"value"};
+
+		// console.log(json2);
+
+		// json => 作用 : 数据储存;
+
+		//var json = [{},{},{}] 
+
+		// var people = {
+
+		// 	age:16,
+		// 	height:190,
+		// 	weight:1000
+
+		// };
+
+
+		// var goods = {
+		// 	price:999,
+		// 	title:"八星八箭",
+		// 	num:99999
+		// }
+
+		// var listComputer = [{},{},{},{},{},{},{}]//json => 对象数组;
+		// var listZuanshi = [{},{},{},{},{},{},{}]//json => 对象数组;
+
+
+		// var goods = {
+
+		// 	listComputer:[{},{},{},{},{},{},{}],
+		// 	listZuanshi:[{},{},{},{},{},{},{}]
+
+		// }
+
+
+
+		// var obj = {
+
+		// 	aa:"hello1",
+		// 	ba:"hello2",
+		// 	ca:"hello3"
+		// }
+		// console.log(obj.a)
+		// console.log(obj.b)
+		// console.log(obj.c)
+
+		// for(var i = 0 ; i < arr.length; i++){
+
+		// 	i => num
+
+		// }
+
+		// for(var i in obj){
+
+		// 	console.log(i);//代表key;obj;
+
+		// }
+
+		//for in 循环通常用来遍历对象;  >>> 自动生成对象中的key
+
+
+		 // for(var i in obj){
+
+		 // 	//	console.log(i);//代表key;obj;
+
+		 // 	//js中的所有的. 都可以转换为 []
+		 // 	//obj["a"]
+
+		 // 	console.log(obj[i])
+
+		 // }
+
+		 //console.log(obj["aa"])
+
+		 // var arr = [8,5,6,7,8,9,0];
+
+
+		 // for(var i in arr){
+
+		 // 	console.log(arr[i]);
+
+		 // }
+
+		 //arguments对象 一定要用for循环;
+
+
+		 // var arr = [1,2,3,4,5,6];
+
+		 // var ls = arr[2];
+
+		 // arr[2] = arr[4];
+		 // arr[4] = ls;
+
+		 // console.log(arr);
+
+		 //var arr = [5,2,33,333,1,7,"hello",9,6,8,"hello"];
+
+
+		 // for(var i = 0 ; i < arr.length - 1; i++){
+		 // 	for(var j = 0 ; j < arr.length - i; j++){
+		 // 		var ls = "";
+		 // 		if(arr[j] > arr[j+1]){
+		 // 			ls = arr[j];
+		 // 			arr[j] = arr[j + 1];
+		 // 			arr[j + 1] = ls;
+		 // 		}
+		 // 	}
+		 // }
+		 // console.log(arr);
+
+		 for(var i = 0 ; i < arr.length; i++){
+		 	var min = arr[i];
+		 	var minIndex = i;
+		 	var ls = arr[i];		 
+		 	for(var j = i+1 ; j < arr.length; j++){
+		 		if(min > arr[j]){
+		 			min = arr[j];//最小值更新
+		 			minIndex = j;
+		 		}
+		 	}
+		 	//确定最小值;
+		 	arr[i] = min;
+		 	arr[minIndex] = ls;
+		 }
+		 console.log(arr);
+		 arr.sort()
+ 		 console.log(arr)；
+
+		 var arr = [1,1,2,3,444,4,4,4,5,6,7];
+
+
+
+		 function duplicateRemoval(arr){//数组去重方法 ;
+
+
+		 	//返回去重之后的数组;
+
+		 	var arr2 = arr.sort();//排序;
+		 //	console.log(arr2);
+
+		 	var arr3 = [];//空数组承载结果;
+
+
+		 	for(var i in arr2){
+
+		 		//console.log(arr2[i]);
+		 		if(arr3[arr3.length - 1] != arr2[i]){//是否上个数组的最后一项和当前循环到的项相同，如果不同插入新数组，如果相同则忽略;
+
+
+		 				arr3.push(arr2[i]);
+
+
+		 		}
+		 		
+
+		 	}
+
+		 	//console.log(arr3)
+
+		 	return arr3;
+
+
+		 }
+
+
+		  console.log(duplicateRemoval(arr));
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
